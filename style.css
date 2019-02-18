@@ -1,0 +1,30 @@
+#container {
+  display: grid;
+  background-color: beige;
+  /*            width :200px;*/
+}
+.piece {
+  outline: 0.5px solid grey;
+  position: absolute;
+  background-image: url(totoro.jpg);
+  z-index: 1;
+}
+
+#draggable {
+  width: 147.5px;
+  height: 87.5px;
+  text-align: center;
+  background: white;
+  position: absolute;
+  border: 1px solid black;
+}
+body {
+  display: flex;
+  flex-flow: wrap;
+}
+.table {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  z-index: 0;
+}
