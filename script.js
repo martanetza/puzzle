@@ -73,25 +73,52 @@ function puzzlePosition(puzzles) {
     puzzles[i].style.left = randNumb + "px";
     puzzles[i].style.marginTop = randNumb + "px";
     randNumb = Math.random() * 400;
-    console.log(puzzles[1]);
+    console.log(puzzles[i].textContent[0]);
+    if (puzzles[i].textContent[0] == 1) {
+      puzzles[i].style.backgroundPositionX = -(natWidth / 4) + "px";
+    }
+    if (puzzles[i].textContent[0] == 2) {
+      puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 2) + "px";
+    }
+    if (puzzles[i].textContent[0] == 3) {
+      puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 3) + "px";
+    }
+    if (puzzles[i].textContent[0] == 4) {
+      puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 4) + "px";
+    }
+    if (puzzles[i].textContent[1] == 1) {
+      puzzles[i].style.backgroundPositionY = -(natHeight / 4) + "px";
+    }
+    if (puzzles[i].textContent[1] == 2) {
+      puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 2) + "px";
+    }
+    if (puzzles[i].textContent[1] == 3) {
+      puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 3) + "px";
+    }
+    if (puzzles[i].textContent[1] == 4) {
+      puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 4) + "px";
+    }
+
+    // console.log(puzzles[1]);
   }
-  for (let i = 0; i < puzzles.length; i += 2) {
-    // puzzles[i].style.backgroundPositionX = -(natWidth / 4) + "px";
-    puzzles[i].style.backgroundPositionY = -(natHeight / 4) + "px";
-    console.log(puzzles[i].style.backgroundPositionY);
-  }
-  for (let i = 0; i < puzzles.length; i += 3) {
-    // puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 2) + "px";
-    puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 2) + "px";
-  }
-  for (let i = 0; i < puzzles.length; i += 4) {
-    // puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 3) + "px";
-    puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 3) + "px";
-  }
-  for (let i = 0; i < puzzles.length; i += 5) {
-    // puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 4) + "px";
-    puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 4) + "px";
-  }
+  // for (let i = 0; i < puzzles.length; i += 2) {
+  //   // puzzles[i].style.backgroundPositionX = -(natWidth / 4) + "px";
+  //   puzzles[i].style.backgroundPositionY = -(natHeight / 4) + "px";
+  //   console.log(puzzles[i].style.backgroundPositionY);
+  // }
+  // for (let i = 0; i < puzzles.length; i += 3) {
+  //   // puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 2) + "px";
+  //   puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 2) + "px";
+  // }
+  // for (let i = 0; i < puzzles.length; i += 4) {
+  //   // puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 3) + "px";
+  //   puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 3) + "px";
+  // }
+  // for (let i = 0; i < puzzles.length; i += 5) {
+  //   // puzzles[i].style.backgroundPositionX = -((natWidth / 4) * 4) + "px";
+  //   puzzles[i].style.backgroundPositionY = -((natHeight / 4) * 4) + "px";
+  // }
+  for (let i = 0; i < puzzles.length; i++) {}
 }
 
 let dragged;
