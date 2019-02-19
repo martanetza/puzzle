@@ -32,10 +32,9 @@ function prepareContainer() {
       piece.style.height = container_height / numOfYPieces + "px";
       piece.style.width = container_width / numOfYPieces + "px";
 
-      piece.textContent = `${x}${y}`;
+      // piece.textContent = `${x}${y}`;
       // piece.classList.add("piece");
       piece.classList.add("dropzone");
-
       document.querySelector("#container").appendChild(piece);
     }
   }
@@ -48,6 +47,7 @@ function prepareContainer() {
       piece.textContent = `${x}${y}`;
       // piece.classList.add("piece");
       piece.classList.add("piece");
+
       piece.style.height = container_height / numOfYPieces + "px";
       piece.style.width = container_width / numOfYPieces + "px";
       // piece.style.marginLeft = randNumb + "px";
@@ -65,13 +65,13 @@ function puzzlePosition(puzzles) {
   console.log(puzzles.length);
   for (let i = 0; i < puzzles.length; i++) {
     puzzles[i].style.left = randNumb + "px";
-    puzzles[i].style.marginTop = randNumb + "px";
+    // puzzles[i].style.marginTop = randNumb + "px";
     randNumb = Math.random() * 400;
     console.log(puzzles[1]);
   }
   for (let i = 0; i < puzzles.length; i++) {
     puzzles[i].style.left = randNumb + "px";
-    puzzles[i].style.marginTop = randNumb + "px";
+    // puzzles[i].style.marginTop = randNumb + "px";
     randNumb = Math.random() * 400;
     console.log(puzzles[i].textContent[0]);
     if (puzzles[i].textContent[0] == 1) {
